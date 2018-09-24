@@ -1,4 +1,0 @@
-CREATE DATABASE todo_list;
-CREATE TABLE `todo_list`.`list` ( `list_id` INT(3) NOT NULL AUTO_INCREMENT ,`username` VARCHAR(50) NOT NULL , `list_name` VARCHAR(50) NOT NULL , PRIMARY KEY (`list_id`)) ENGINE = MyISAM;
-CREATE TABLE `todo_list`.`task` ( `task_id` INT(3) NOT NULL AUTO_INCREMENT ,`list_id` INT(3) NOT NULL , `task_name` VARCHAR(100) NOT NULL , `due_date`DATE NOT NULL , `status` ENUM('Pending','Started','Completed','Late') NOT NULL, PRIMARY KEY (`task_id`)) ENGINE = MyISAM;
-CREATE TABLE `todo_list`.`user` ( `username` VARCHAR(50) NOT NULL , `password`VARCHAR(50) NOT NULL , PRIMARY KEY (`username`)) ENGINE = MyISAM
